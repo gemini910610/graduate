@@ -67,9 +67,11 @@ else if (month == 10) today = $(`#oct-${day}`);
 else if (month == 11) today = $(`#nov-${day}`);
 today.addClass('today');
 
+skip = ['ncu'];
 schools = ['ntue', 'ncku', 'ncu', 'ccu', 'nchu', 'nsysu'];
 schools.forEach(school =>
 {
+    if (skip.includes(school)) return;
     $.ajax({
         type: 'get',
         url: `data/${school}.json`,
@@ -83,6 +85,11 @@ function label_date(data)
 {
     school = data.name;
     abbr = data.abbr;
+    p = $('<p></p>');
+    p.addClass(abbr);
+    p.text(school);
+    $('.legend').append(p);
+
     dates = Object.keys(data.dates);
     dates.forEach(date => {
         d = date.split('/');
