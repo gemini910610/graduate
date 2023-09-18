@@ -54,7 +54,7 @@ body {
     font-weight: bold;
 }
 
-.calender td p {
+.calender td p, .remind p {
     margin-top: 5px;
     padding: 2px 5px;
     border-radius: 5px;
@@ -135,4 +135,10 @@ body {
 
 .legend .nsysu::before {
     color: var(--nsysu);
+}
+
+.remind {
+    position: fixed;
+    top: 20px;
+    left: 20px;
 }

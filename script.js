@@ -81,6 +81,15 @@ schools.forEach(school =>
     });
 });
 
+remind = $('.remind');
+console.log(month)
+if (month == 9) todo = $(`#sep-${day} p`);
+else if (month == 10) todo = $(`oct-${day} p`);
+else if (month == 11) todo = $(`nov-${day} p`);
+todo = todo.clone();
+if (todo.length > 0) remind.append(todo);
+else remind.append('<p>無</p>');
+
 function label_date(data)
 {
     school = data.name;
