@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(244, 244, 244);
+}
+
+.calender {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.calender h1 {
+    width: 60%;
+}
+
+.calender table {
+    border-collapse: collapse;
+    width: 60%;
+    flex: 1;
+    background-color: rgb(235, 235, 235);
+}
+
+.calender th {
+    padding: 10px;
+    background-color: lightgrey;
+}
+
+.calender td {
+    vertical-align: top;
+    width: calc(100% / 7);
+    padding: 5px;
+}
+
+.calender td div {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.today div {
+    background-color: royalblue;
+    color: white;
+    font-weight: bold;
+}
+
+.calender td p {
+    margin-top: 5px;
+    padding: 2px 5px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+:root {
+    --ntue: rgb(125, 190, 250);
+    --ncku: rgb(85, 255, 170);
+    --ncu: rgb(190, 125, 255);
+    --ccu: rgb(170, 255, 85);
+    --nchu: rgb(250, 120, 185);
+    --nsysu: rgb(255, 180, 105);
+}
+
+.ntue {
+    background-color: var(--ntue);
+}
+
+.ncku {
+    background-color: var(--ncku);
+}
+
+.ncu {
+    background-color: var(--ncu);
+}
+
+.ccu {
+    background-color: var(--ccu);
+}
+
+.nchu {
+    background-color: var(--nchu);
+}
+
+.nsysu {
+    background-color: var(--nsysu);
+}
+
+.legend {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.legend p {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.legend p::before {
+    content: '●';
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.legend .ntue::before {
+    color: var(--ntue);
+}
+
+.legend .ncku::before {
+    color: var(--ncku);
+}
+
+.legend .ncu::before {
+    color: var(--ncu);
+}
+
+.legend .ccu::before {
+    color: var(--ccu);
+}
+
+.legend .nchu::before {
+    color: var(--nchu);
+}
+
+.legend .nsysu::before {
+    color: var(--nsysu);
+}
