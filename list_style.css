@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --ntue: rgb(125, 190, 250);
+    --ncku: rgb(85, 255, 170);
+    --ncu: rgb(190, 125, 255);
+    --ccu: rgb(170, 255, 85);
+    --nchu: rgb(250, 120, 185);
+    --nsysu: rgb(255, 180, 105);
+}
+
+#ntue {
+    background-color: var(--ntue);
+}
+
+#ncku {
+    background-color: var(--ncku);
+}
+
+#ncu {
+    background-color: var(--ncu);
+}
+
+#ccu {
+    background-color: var(--ccu);
+}
+
+#nchu {
+    background-color: var(--nchu);
+}
+
+#nsysu {
+    background-color: var(--nsysu);
+}
+
+.card {
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+}
+
+hr {
+    border: 1px solid black;
+    margin: 5px 0;
+}
+
+ol, ul {
+    list-style-position: inside;
+    padding-inline-start: 40px;
+}
+
+div>ol, div>ul {
+    padding-inline-start: 0;
+}
+
+a {
+    position: absolute;
+    right: 20px;
+    top: calc(10px + 0.67em);
+    font-size: 20px;
+}
+
+i {
+    color: black;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    align-items: stretch;
+    gap: 20px;
+}
+
+#filter {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    font-size: 20px;
+}
+
+#filter input {
+    margin-right: 10px;
+}
+
+.hide {
+    display: none;
+}
